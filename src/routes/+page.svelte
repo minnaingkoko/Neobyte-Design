@@ -1,8 +1,9 @@
 <script lang="ts">
     import logo from '$lib/images/logo.png'
+    import hero from '$lib/images/hero-img.jpg'
 </script>
 
-<div class="bg-[url('/background.jpg')] w-[100%] h-[950px] flex justify-center">
+<div class="bg-[url('/background.jpg')] w-[100%] h-[950px] flex flex-col items-center">
     <header class="mt-[50px] flex flex-row justify-between items-center w-[1290px] h-[80px]">
         <div>
             <a href="/">
@@ -20,18 +21,20 @@
             Contact Us
         </div>
     </header>
-    <!-- <div class="hero">
-        <div class="left">
-            <h1>Building Websites that Elevate Your Brand</h1>
-            <p>From concept to launch, we design websites that engage, inspire, and convert, helping your business grow online.</p>
-            <div class="btn">
-                Get Started
+    <div class="w-[100vw] relative flex flex-row justify-center">
+        <div class="flex flex-row gap-[45px] w-[1290px] mt-[25px]">
+            <div class="mt-[10px]">
+                <h1 class="w-[710px] text-[80px] font-bold mb-[30px] text-[#0c1523]">Building Websites that Elevate Your Brand</h1>
+                <p class="w-[610px] text-[21px] leading-[1.62]">From concept to launch, we design websites that engage, inspire, and convert, helping your business grow online.</p>
+                <div class="btn">
+                    Get Started
+                </div>
+            </div>
+            <div class="h-[795px] absolute right-0">
+                <img class="w-[830px] h-[795px] object-cover" src={hero} alt="">
             </div>
         </div>
-        <div class="right">
-
-        </div>
-    </div> -->
+    </div>
 </div>
 
 
