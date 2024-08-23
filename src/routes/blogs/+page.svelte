@@ -16,9 +16,9 @@
             <a class="transition duration-300 hover:text-[#432cf3]" href="/about-me">About Me</a>
             <a class="text-[#432cf3]" href="/blogs">Blogs</a>
         </nav>
-        <div class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#432cf3] transition duration-300">
-            Contact Us
-        </div>
+        <a href="/contact-me" class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#432cf3] transition duration-300">
+            Contact Me
+        </a>
     </header>
 </div>
 
