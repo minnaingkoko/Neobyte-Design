@@ -1,5 +1,5 @@
 <script lang="ts">
-        import logo_white from '$lib/images/logo-white.png';
+    import logo_white from '$lib/images/logo-white.png';
     import facebook_icon from '$lib/images/facebook-icon.svg';
     import linkedin_icon from '$lib/images/linkedin-icon.svg';
     import viber_icon from '$lib/images/viber-icon.svg';
@@ -11,7 +11,7 @@
 
 <footer>
     <div class="w-[100%] h-[905px] bg-[#0a0f16] pt-[330px] flex justify-center relative">
-        <div class="absolute top-[-190px] z-[10 bg-[#432cf3] w-[1290px] h-[346px] flex justify-center" style="transform: rotate(-1.5deg);">
+        <div class="absolute top-[-190px] z-[10 bg-[#71b095] w-[1290px] h-[346px] flex justify-center" style="transform: rotate(-1.5deg);">
             <div class="w-[1280px] h-[346px] bg-[#f9f9f9] flex justify-center items-center relative overflow-hidden" style="transform: rotate(1.5deg);">
                 <div class="w-[1120px] h-[126px] flex flex-row justify-between items-center">
                     <img class="absolute left-[80px] top-[-30px]" src={newsletter_shape1} alt="">
@@ -19,8 +19,8 @@
                         Subscribe To The Newsletter 
                     </h2>
                     <div class="flex flex-row w-[441px] h-[65px] items-center relative">
-                        <input class="border-[#b0a6a6] focus:border-[#3898ec] focus:outline-none transition duration-300 pt-[19px] pb-[19px] pr-[130px] pl-[20px] w-[100%] h-[100%] border-solid border-[1px] rounded-[6px] text-[#333] text-[14px] leading-[1.42857] bg-[#0000]" type="email" placeholder="Enter Your Email..">
-                        <div class="absolute w-[121px] h-[48px] flex justify-center items-center text-[16px] font-semibold bg-[#432cf3] text-[#fff] rounded-[10px] cursor-pointer right-[8px] hover:bg-[#0c1523] transition duration-300">Subscribe</div>
+                        <input class="border-[#b0a6a6] focus:border-[#71b095] focus:outline-none transition duration-300 pt-[19px] pb-[19px] pr-[130px] pl-[20px] w-[100%] h-[100%] border-solid border-[1px] rounded-[6px] text-[#333] text-[14px] leading-[1.42857] bg-[#0000]" type="email" placeholder="Enter Your Email..">
+                        <div class="absolute w-[121px] h-[48px] flex justify-center items-center text-[16px] font-semibold bg-[#71b095] text-[#fff] rounded-[10px] cursor-pointer right-[8px] hover:bg-[#0c1523] transition duration-300">Subscribe</div>
                     </div>    
                     <img class="absolute bottom-[-145px] right-[120px]" src={newsletter_shape2} alt="">
                 </div>
@@ -39,13 +39,13 @@
                     <a href="mailto:neobytedesign@gmail.com" class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300">neobytedesign@gmail.com</a>
                 </div>
                 <div class="flex flex-row gap-[10px]">
-                    <a target="_blank" href="https://www.facebook.com/neobytedesign" class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#432cf3] hover:border-[#432cf3] transition duration-300">
+                    <a target="_blank" href="https://www.facebook.com/neobytedesign" class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300">
                         <img src={facebook_icon} alt="">
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/company/neobyte-design/" class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#432cf3] hover:border-[#432cf3] transition duration-300">
+                    <a target="_blank" href="https://www.linkedin.com/company/neobyte-design/" class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300">
                         <img src={linkedin_icon} alt="">
                     </a>
-                    <a target="_blank" href="viber://chat?number=+959459170740" class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#432cf3] hover:border-[#432cf3] transition duration-300">
+                    <a target="_blank" href="viber://chat?number=+959459170740" class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300">
                         <img src={viber_icon} alt="">
                     </a>
                 </div>

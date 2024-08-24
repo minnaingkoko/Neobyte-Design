@@ -9,13 +9,13 @@
         </a>
     </div>
     <nav class="flex flex-row gap-[50px] text-[18px] font-medium leading-[1.28]">
-        <a class="transition duration-300 hover:text-[#432cf3]" href="/">Home</a>
-        <a class="transition duration-300 hover:text-[#432cf3]" href="/services">Services</a>
-        <a class="transition duration-300 hover:text-[#432cf3]" href="/portfolios">Portfolios</a>
-        <a class="transition duration-300 hover:text-[#432cf3]" href="/about-me">About Me</a>
-        <a class="transition duration-300 hover:text-[#432cf3]" href="/blogs">Blogs</a>
+        <a class="transition duration-300 hover:text-[#71b095]" href="/">Home</a>
+        <a class="transition duration-300 hover:text-[#71b095]" href="/services">Services</a>
+        <a class="transition duration-300 hover:text-[#71b095]" href="/portfolios">Portfolios</a>
+        <a class="transition duration-300 hover:text-[#71b095]" href="/about-me">About Me</a>
+        <a class="transition duration-300 hover:text-[#71b095]" href="/blogs">Blogs</a>
     </nav>
-    <a href="/contact-me" class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#432cf3] transition duration-300">
+    <a href="/contact-me" class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#71b095] transition duration-300">
         Contact Me
     </a>
 </header>
