@@ -37,5 +37,9 @@
 		"vite": "^5.0.3",
 		"vitest": "^2.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"sib-api-v3-sdk": "^8.5.0"
+	}
 }
