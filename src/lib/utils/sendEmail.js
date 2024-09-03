@@ -16,7 +16,7 @@ export async function sendEmail({ to, subject, htmlContent }) {
 	sendSmtpEmail.htmlContent = htmlContent;
 	sendSmtpEmail.to = [{ name: to.name, email: to.email }];
 	sendSmtpEmail.sender = {
-		email: 'neobytedesign@gmail.com',
+		email: 'noreply@neobytedesign.com',
 		name: 'Neobyte Design'
 	};
 
