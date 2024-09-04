@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '../../../components/Header.svelte';
+	import { setSuccess, setError } from '$lib/stores/messageStore';
 
 	let firstName = '';
 	let lastName = '';
@@ -20,9 +21,9 @@
 		});
 
 		if (res.ok) {
-			alert('Message sent!');
+			setSuccess('Your message has been sent.');
 		} else {
-			alert('Failed to send message.');
+			setError('Error: Failed to send message.');
 		}
 	}
 </script>

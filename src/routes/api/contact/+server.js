@@ -54,6 +54,18 @@ export async function POST({ request }) {
               }
               .content {
                   padding: 20px;
+                  border-bottom: 1px solid #e0e0e0;
+              }
+              p {
+                  color: #666666;
+                  font-size: 16px;
+                  line-height: 1.5;
+              }
+              .footer {
+                  font-size: 14px;
+                  color: #999999;
+                  text-align: center;
+                  margin-top: 20px;
               }
             </style>
           </head>
@@ -64,9 +76,12 @@ export async function POST({ request }) {
                   </div>
                   <div class="content">
                       <p>Dear ${name},</p>
-                      <p>Thank you for contacting Neobyte Design! Your message has been successfully received, and we appreciate your interest in our web design services.</p>
-                      <p>Our team is currently reviewing your submission and will get back to you as soon as possible. If you have any urgent questions or need immediate assistance, please feel free to reply to <a href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a> or contact us directly at <a href="tel:+959459170740">+959459170740</a>.</p>
-                      <p>Thank you for considering Neobyte Design. We look forward to the opportunity to work with you!</p>
+                      <p>Thank you for contacting Neobyte Design! Your message has been successfully received, and I appreciate your interest in my web design services.</p>
+                      <p>I am currently reviewing your submission and will get back to you as soon as possible. If you have any urgent questions or need immediate assistance, please feel free to reply to <a href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a> or contact me directly at <a href="tel:+959459170740">+959459170740</a>.</p>
+                      <p>Thank you for considering Neobyte Design. I look forward to the opportunity to work with you!</p>
+                  </div>
+                  <div class="footer">
+                    <p>Copyright © 2024 Neobyte Design. All rights reserved.</p>
                   </div>
               </div>
           </body>

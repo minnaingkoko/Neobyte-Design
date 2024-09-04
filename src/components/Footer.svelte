@@ -148,6 +148,6 @@
 	<div
 		class="w-[100%] h-[93px] bg-[#151c25] flex justify-center items-center text-[#fff] font-medium text-[18px] leading-[1.28]"
 	>
-		Copyright © 2024 Neobyte Design
+		Copyright © 2024 Neobyte Design. All rights reserved.
 	</div>
 </footer>
