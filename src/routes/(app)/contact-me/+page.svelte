@@ -11,7 +11,7 @@
 	async function handleSubmit(event) {
 		event.preventDefault();
 
-		const res = await fetch('/contact-me', {
+		const res = await fetch('/api/contact', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
