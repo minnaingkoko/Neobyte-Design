@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Header from '../../../components/Header.svelte';
 	import { setSuccess, setError } from '$lib/stores/messageStore';
+	import facebook_icon from '$lib/images/facebook-icon.svg';
+	import linkedin_icon from '$lib/images/linkedin-icon.svg';
+	import viber_icon from '$lib/images/viber-icon.svg';
+	import arrow_down from '$lib/images/arrow-down.svg';
 
 	let firstName = '';
 	let lastName = '';
@@ -80,14 +84,76 @@
 					>
 				</form>
 			</div>
-			<div class="w-[550px] h-[100%] bg-[#0c1523] rounded-tr-[10px] rounded-br-[10px]"></div>
+			<div class="w-[550px] h-[100%] bg-[#0c1523] text-white rounded-tr-[10px] rounded-br-[10px] px-[60px] pt-[85px] pb-[100px]">
+				<h2 class="mb-[20px] text-[32px] font-semibold">Contact Details</h2>
+				<p class="text-[21px] leading-[1.62] mb-[45px]"><b>Neobyte Design</b> offers multiple ways to connect with us. Reach out through the following contact information for any inquiries or assistance:</p>
+				<h4 class="mb-[20px]">Phone Number</h4>
+				<a class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300" href="tel:+959459170740">+959459170740</a>
+				<h4 class="mb-[20px] mt-[45px]">Email</h4>
+				<a class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300" href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a>
+				<div class="flex flex-row gap-[10px] mt-[70px]">
+					<a
+						target="_blank"
+						href="https://www.facebook.com/neobytedesign"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+					>
+						<img src={facebook_icon} alt="" />
+					</a>
+					<a
+						target="_blank"
+						href="https://www.linkedin.com/company/neobyte-design/"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+					>
+						<img src={linkedin_icon} alt="" />
+					</a>
+					<a
+						target="_blank"
+						href="viber://chat?number=+959459170740"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+					>
+						<img src={viber_icon} alt="" />
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-<div class="w-[100%] flex flex-col items-center h-[835px] pb-[140px] mb-[140px]">
+<div class="w-[100%] flex flex-col items-center pb-[200px] mb-[200px]">
 	<h2 class="mb-[35px] text-[54px] font-bold leading-[1.17]">Frequently asked questions</h2>
 	<p class="w-[685px] text-[#585858] text-[21px] leading-[1.62] text-center">
 		Welcome to our Frequently Asked Questions (FAQ) section! Here, we have compiled a list of
 		commonly asked questions to provide you with quick and helpful answers.
 	</p>
+	<div class="flex flex-col gap-[30px] mt-[80px]">
+		<div class="flex flex-row gap-[50px]">
+			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
+				<h3 class="text-[24px] font-bold text-[#39394a]">What services do you offer?</h3>
+				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
+			</div>
+			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
+				<h3 class="text-[24px] font-bold text-[#39394a]">How much does a website cost?</h3>
+				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
+			</div>
+		</div>
+		<div class="flex flex-row gap-[50px]">
+			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
+				<h3 class="text-[24px] font-bold text-[#39394a]">How long does design take?</h3>
+				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
+			</div>
+			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
+				<h3 class="text-[24px] font-bold text-[#39394a]">Can you update my website?</h3>
+				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
+			</div>
+		</div>
+		<div class="flex flex-row gap-[50px]">
+			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
+				<h3 class="text-[24px] font-bold text-[#39394a]">What technologies do you use?</h3>
+				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
+			</div>
+			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
+				<h3 class="text-[24px] font-bold text-[#39394a]">Do you offer support after launch?</h3>
+				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
+			</div>
+		</div>
+	</div>	
 </div>
