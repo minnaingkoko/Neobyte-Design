@@ -4,7 +4,7 @@
 	import facebook_icon from '$lib/images/facebook-icon.svg';
 	import linkedin_icon from '$lib/images/linkedin-icon.svg';
 	import viber_icon from '$lib/images/viber-icon.svg';
-	import arrow_down from '$lib/images/arrow-down.svg';
+	import FaqItem from '../../../components/FAQItem.svelte';
 
 	let firstName = '';
 	let lastName = '';
@@ -47,50 +47,61 @@
 				<form class="flex flex-col py-[77px] px-[60px] gap-[20px]" on:submit={handleSubmit}>
 					<div class="flex flex-row gap-[20px]">
 						<input
-							class="pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="text"
 							placeholder="First Name"
-              bind:value={firstName}
+							bind:value={firstName}
 						/>
 						<input
-							class="pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="text"
 							placeholder="Last Name"
-              bind:value={lastName}
+							bind:value={lastName}
 						/>
 					</div>
 					<div class="flex flex-row gap-[20px]">
 						<input
-							class="pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="email"
 							placeholder="Email"
 							bind:value={email}
 						/>
 						<input
-							class="pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="text"
 							placeholder="Subject"
 							bind:value={subject}
 						/>
 					</div>
 					<textarea
-						class="pl-[20px] pt-[20px] w-[620px] h-[256px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+						class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] pt-[20px] w-[620px] h-[256px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 						placeholder="Your Message"
 						bind:value={message}
 					></textarea>
 					<button
-						class="w-[174px] h-[65px] bg-[#0c1523] text-[#fff] rounded-[10px] leading-[1.4] font-bold text-[18px] flex justify-center items-center mt-[40px]" type="submit"
-						>Send Message</button
+						class="w-[174px] h-[65px] bg-[#0c1523] text-[#fff] rounded-[10px] leading-[1.4] font-bold text-[18px] flex justify-center items-center mt-[40px]"
+						type="submit">Send Message</button
 					>
 				</form>
 			</div>
-			<div class="w-[550px] h-[100%] bg-[#0c1523] text-white rounded-tr-[10px] rounded-br-[10px] px-[60px] pt-[85px] pb-[100px]">
+			<div
+				class="w-[550px] h-[100%] bg-[#0c1523] text-white rounded-tr-[10px] rounded-br-[10px] px-[60px] pt-[85px] pb-[100px]"
+			>
 				<h2 class="mb-[20px] text-[32px] font-semibold">Contact Details</h2>
-				<p class="text-[21px] leading-[1.62] mb-[45px]"><b>Neobyte Design</b> offers multiple ways to connect with us. Reach out through the following contact information for any inquiries or assistance:</p>
+				<p class="text-[21px] leading-[1.62] mb-[45px]">
+					<b>Neobyte Design</b> offers multiple ways to connect with us. Reach out through the following
+					contact information for any inquiries or assistance:
+				</p>
 				<h4 class="mb-[20px]">Phone Number</h4>
-				<a class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300" href="tel:+959459170740">+959459170740</a>
+				<a
+					class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300"
+					href="tel:+959459170740">+959459170740</a
+				>
 				<h4 class="mb-[20px] mt-[45px]">Email</h4>
-				<a class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300" href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a>
+				<a
+					class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300"
+					href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a
+				>
 				<div class="flex flex-row gap-[10px] mt-[70px]">
 					<a
 						target="_blank"
@@ -124,36 +135,44 @@
 		Welcome to our Frequently Asked Questions (FAQ) section! Here, we have compiled a list of
 		commonly asked questions to provide you with quick and helpful answers.
 	</p>
-	<div class="flex flex-col gap-[30px] mt-[80px]">
-		<div class="flex flex-row gap-[50px]">
-			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
-				<h3 class="text-[24px] font-bold text-[#39394a]">What services do you offer?</h3>
-				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
-			</div>
-			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
-				<h3 class="text-[24px] font-bold text-[#39394a]">How much does a website cost?</h3>
-				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
-			</div>
+	<div class="flex flex-row gap-[50px] mt-[80px]">
+		<div class="flex flex-col gap-[30px]">
+			<FaqItem
+				question="What services do you offer?"
+				answer="Neobyte Design specializes in custom websites, offering design, development, maintenance, and SEO. I also provide e-commerce solutions, branding, and digital marketing strategies to boost your online presence."
+			/>
+
+			<FaqItem
+				question="How much does a website cost?"
+				answer="My pricing varies based on the complexity and scope of each project. I offer flexible packages tailored to meet the unique needs of every client. Contact me for a detailed quote customized to your specific requirements."
+			/>
+
+			<FaqItem
+				question="How long does design take?"
+				answer="The timeline for a website design project varies depending on the project's size and
+			complexity. On average, a standard website can take 4-6 weeks from initial consultation to
+			launch. I'll provide a more accurate timeline after discussing your project's details."
+			/>
 		</div>
-		<div class="flex flex-row gap-[50px]">
-			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
-				<h3 class="text-[24px] font-bold text-[#39394a]">How long does design take?</h3>
-				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
-			</div>
-			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
-				<h3 class="text-[24px] font-bold text-[#39394a]">Can you update my website?</h3>
-				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
-			</div>
+		<div class="flex flex-col gap-[30px]">
+			<FaqItem
+				question="Can you update my website?"
+				answer="Whether you need a complete redesign or just updates, Neobyte Design can transform your website to better reflect your brand, enhance functionality, and meet the latest design standards, ensuring a modern online presence."
+			/>
+
+			<FaqItem
+				question="What technologies do you use?"
+				answer="I utilize a variety of platforms and technologies, including SvelteKit for frontend
+			development, Node.js for backend, and open-source solutions tailored to your project's
+			needs. My goal is to deliver a high-performing, scalable website."
+			/>
+
+			<FaqItem
+				question="Do you offer support after launch?"
+				answer="Absolutely! Neobyte Design provides ongoing support and maintenance services to ensure
+			your website runs smoothly. I offer different maintenance packages to suit your needs,
+			including updates, backups, and performance monitoring."
+			/>
 		</div>
-		<div class="flex flex-row gap-[50px]">
-			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
-				<h3 class="text-[24px] font-bold text-[#39394a]">What technologies do you use?</h3>
-				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
-			</div>
-			<div class="w-[620px] h-[120px] rounded-[8px] cursor-pointer px-[35px] pt-[43px] pb-[53px] flex flex-row justify-between" style="box-shadow: 0 2px 16px rgba(0, 0, 0, .08);">
-				<h3 class="text-[24px] font-bold text-[#39394a]">Do you offer support after launch?</h3>
-				<img class="w-[19px] h-[11px]" src={arrow_down} alt="">
-			</div>
-		</div>
-	</div>	
+	</div>
 </div>
