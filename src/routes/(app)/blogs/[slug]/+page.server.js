@@ -12,8 +12,6 @@ export async function load({ params }) {
   if (error) {
     console.error('Error fetching post:', error);
   }
-
-  console.log(post);
   
   return { post };
 }
