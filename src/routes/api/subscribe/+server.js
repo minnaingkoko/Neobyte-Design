@@ -126,9 +126,9 @@ export async function POST({ request }) {
           </body>
         </html>
       `
-		})
+		});
 
-		return new Response(JSON.stringify({ message: 'Thank you for subscribing!' }), { status: 200 } );
+		return new Response(JSON.stringify({ message: 'Thank you for subscribing!' }), { status: 200 });
 	} catch (error) {
 		return new Response(JSON.stringify({ error: 'Failed to subscribe newsletter' }), {
 			status: 500

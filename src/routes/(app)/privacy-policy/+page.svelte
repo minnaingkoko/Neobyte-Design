@@ -95,50 +95,57 @@
 				information may be transferred as part of that transaction.
 			</li>
 		</ul>
-        <h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
+		<h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
 			Security of Your Information
 		</h2>
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[20px]">
-			We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or method of electronic storage is completely secure, and we cannot guarantee absolute security.
+			We take reasonable measures to protect your information from unauthorized access, use, or
+			disclosure. However, no method of transmission over the internet or method of electronic
+			storage is completely secure, and we cannot guarantee absolute security.
 		</p>
-        <h3 class="text-[18px] leading-[1.28] text-[#0c1523] font-bold mb-[20px]">
-            Your Choices
-        </h3>
+		<h3 class="text-[18px] leading-[1.28] text-[#0c1523] font-bold mb-[20px]">Your Choices</h3>
 		<ul
 			class="mb-[85px] pl-[40px] flex flex-col gap-[15px] text-[18px] leading-[1.28] text-[#0c1523] list-disc"
 		>
 			<li>
 				<b>Opt-Out:</b>
-				 You can opt-out of receiving promotional communications from us by following the unsubscribe instructions provided in those communications or by contacting us directly.
+				You can opt-out of receiving promotional communications from us by following the unsubscribe
+				instructions provided in those communications or by contacting us directly.
 			</li>
 			<li>
 				<b>Cookies:</b>
-				 Most web browsers are set to accept cookies by default. You can choose to set your browser to remove or reject cookies, but this may affect your ability to use certain features of the Site.
+				Most web browsers are set to accept cookies by default. You can choose to set your browser to
+				remove or reject cookies, but this may affect your ability to use certain features of the Site.
 			</li>
 		</ul>
-        <h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
-			Third-Party Links
-		</h2>
+		<h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">Third-Party Links</h2>
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[85px]">
-			The Site may contain links to third-party websites that are not operated by us. We are not responsible for the content or privacy practices of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.
+			The Site may contain links to third-party websites that are not operated by us. We are not
+			responsible for the content or privacy practices of these external sites. We encourage you to
+			review the privacy policies of any third-party sites you visit.
 		</p>
-        <h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
+		<h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
 			Children’s Privacy
 		</h2>
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[85px]">
-			Our Site and services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us, and we will take steps to delete it.
+			Our Site and services are not directed to individuals under the age of 13. We do not knowingly
+			collect personal information from children under 13. If you believe we have collected such
+			information, please contact us, and we will take steps to delete it.
 		</p>
-        <h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
+		<h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
 			Changes to This Privacy Policy
 		</h2>
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[85px]">
-			We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on the Site with the "Last updated" date. Your continued use of the Site after any modifications indicates your acceptance of the revised Privacy Policy.
+			We may update this Privacy Policy from time to time. We will notify you of any changes by
+			posting the new Privacy Policy on the Site with the "Last updated" date. Your continued use of
+			the Site after any modifications indicates your acceptance of the revised Privacy Policy.
 		</p>
-        <h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">
-			Contact Us
-		</h2>
+		<h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">Contact Us</h2>
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[120px]">
-			If you have any questions or concerns about this Privacy Policy, please contact us at <a class="text-[#71b095] hover:underline transition duration-300" href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a>
+			If you have any questions or concerns about this Privacy Policy, please contact us at <a
+				class="text-[#71b095] hover:underline transition duration-300"
+				href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a
+			>
 		</p>
 	</div>
 </div>

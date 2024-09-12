@@ -43,7 +43,12 @@
 				style="transform: rotate(1.5deg);"
 			>
 				<div class="w-[1120px] h-[126px] flex flex-row justify-between items-center">
-					<img class="absolute left-[80px] top-[-30px]" src={newsletter_shape1} alt="" />
+					<img
+						class="absolute left-[80px] top-[-30px]"
+						src={newsletter_shape1}
+						loading="lazy"
+						alt=""
+					/>
 					<h2 class="w-[535px] font-bold leading-[1.17] text-[54px] text-[#0c1523]">
 						Subscribe To The Newsletter
 					</h2>
@@ -64,19 +69,29 @@
 							Subscribe
 						</button>
 					</form>
-					<img class="absolute bottom-[-145px] right-[120px]" src={newsletter_shape2} alt="" />
+					<img
+						class="absolute bottom-[-145px] right-[120px]"
+						src={newsletter_shape2}
+						loading="lazy"
+						alt=""
+					/>
 				</div>
 			</div>
 		</div>
 		<div class="text-[#d4cdcd] w-[1290px] h-[444px] flex flex-row justify-between">
 			<div class="w-[375px]">
-				<img class="w-[195px] h-[80px] object-cover mb-[40px]" src={logo_white} alt="" />
+				<img
+					class="w-[195px] h-[80px] object-cover mb-[40px]"
+					src={logo_white}
+					loading="lazy"
+					alt=""
+				/>
 				<h2 class="text-[21px] leading-[1.62] mb-[25px]">
 					Neobyte Design is one of the leading website design agencies, driving creative and
 					cutting-edge web solutions.
 				</h2>
 				<div class="flex flex-row mb-[25px] gap-[15px]">
-					<img src={phone_icon} alt="" />
+					<img src={phone_icon} loading="lazy" alt="" />
 					<a
 						href="tel:+959459170740"
 						class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300"
@@ -84,7 +99,7 @@
 					>
 				</div>
 				<div class="flex flex-row mb-[25px] gap-[15px]">
-					<img src={message_icon} alt="" />
+					<img src={message_icon} loading="lazy" alt="" />
 					<a
 						href="mailto:neobytedesign@gmail.com"
 						class="text-[#fff] opacity-[0.7] hover:opacity-[1] transition duration-300"
@@ -97,21 +112,21 @@
 						href="https://www.facebook.com/neobytedesign"
 						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
 					>
-						<img src={facebook_icon} alt="" />
+						<img src={facebook_icon} loading="lazy" alt="" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.linkedin.com/company/neobyte-design/"
 						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
 					>
-						<img src={linkedin_icon} alt="" />
+						<img src={linkedin_icon} loading="lazy" alt="" />
 					</a>
 					<a
 						target="_blank"
 						href="viber://chat?number=+959459170740"
 						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
 					>
-						<img src={viber_icon} alt="" />
+						<img src={viber_icon} loading="lazy" alt="" />
 					</a>
 				</div>
 			</div>

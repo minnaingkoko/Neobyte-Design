@@ -5,14 +5,12 @@ export async function POST({ request }) {
 	const { name, email, message, subject } = await request.json();
 
 	try {
-    // Save the contact form submission to Supabase
-    const { data, error } = await supabase
-      .from('contacts')
-      .insert([{ name, email, message }]);
+		// Save the contact form submission to Supabase
+		const { data, error } = await supabase.from('contacts').insert([{ name, email, message }]);
 
-    if (error) {
-      throw new Error('Error saving contact form to Supabase');
-    }
+		if (error) {
+			throw new Error('Error saving contact form to Supabase');
+		}
 
 		await sendEmail({
 			to: { name, email },
@@ -89,20 +87,22 @@ export async function POST({ request }) {
       `
 		});
 
-    // Send a notification email to yourself
+		// Send a notification email to yourself
 		await sendEmail({
-      to: { name: 'Min Naing Ko Ko', email: 'minnaingkoko.dev@gmail.com' },
+			to: { name: 'Min Naing Ko Ko', email: 'minnaingkoko.dev@gmail.com' },
 			subject: `New contact form submission from ${name}`,
 			htmlContent: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Message:</strong> ${message}</p>
-      ` 
+      `
 		});
 
 		return new Response(JSON.stringify({ success: true }), { status: 200 });
 	} catch (error) {
-		return new Response(JSON.stringify({ error: 'Failed to process contact form' }), { status: 500 });
+		return new Response(JSON.stringify({ error: 'Failed to process contact form' }), {
+			status: 500
+		});
 	}
 }
