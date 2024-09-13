@@ -46,8 +46,8 @@
 
 <div class="mt-[120px] mb-[200px] pb-[200px] flex flex-col items-center">
 	<div class="w-[1290px]">
-		<div class="text-[#432cf3] text-[18px] mb-[25px] font-bold leading-[1.28]">The Blog</div>
-		<h2 class="w-[600px] mb-[100px] text-[64px] leading-[1.17] font-bold">Browse the articles & resources</h2>
+		<div class="text-[#71b095] text-[18px] mb-[25px] font-bold leading-[1.28]">The Blogs</div>
+		<h2 class="mb-[100px] text-[64px] leading-[1.17] font-bold">Browse the articles & resources</h2>
 	</div>
 	<div class="flex flex-row w-[1290px] flex-wrap gap-[30px]">
 		{#each data.posts as post, index}

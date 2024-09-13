@@ -6,6 +6,20 @@
 	import portfolio4 from '$lib/images/portfolio4.webp';
 	import portfolio5 from '$lib/images/portfolio5.webp';
 	import portfolio6 from '$lib/images/portfolio6.webp';
+
+	const images = [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6];
+
+	export let data;
+
+	const formatDate = (dateStr) => {
+		const date = new Date(dateStr);
+
+		// Customize the date format
+		const options = { year: 'numeric', month: 'long', day: 'numeric' };
+		const formattedDate = date.toLocaleDateString('en-US', options);
+
+		return formattedDate;
+	};
 </script>
 
 <div class="w-[100%] flex justify-center">
@@ -32,28 +46,30 @@
 </div>
 
 <div class="mt-[120px] mb-[200px] pb-[200px] flex flex-col items-center">
+	<div class="w-[1290px]">
+		<div class="text-[#71b095] text-[18px] mb-[25px] font-bold leading-[1.28]">Portfolios</div>
+		<h2 class="mb-[100px] text-[64px] leading-[1.17] font-bold">
+			Explore Projects & Success Stories
+		</h2>
+	</div>
+
 	<div class="flex flex-col gap-[48px]">
-		<div class="flex flex-row gap-[24px]">
-			<div class="w-[416px] h-[614px]">
-				<img src={portfolio1} loading="lazy" alt="">
-			</div>
-			<div class="w-[416px] h-[614px]">
-				<img src={portfolio2} loading="lazy" alt="">
-			</div>
-			<div class="w-[416px] h-[614px]">
-				<img src={portfolio3} loading="lazy" alt="">
-			</div>
-		</div>
-		<div class="flex flex-row gap-[24px]">
-			<div class="w-[416px] h-[614px]">
-				<img src={portfolio4} loading="lazy" alt="">
-			</div>
-			<div class="w-[416px] h-[614px]">
-				<img src={portfolio5} loading="lazy" alt="">
-			</div>
-			<div class="w-[416px] h-[614px]">
-				<img src={portfolio6} loading="lazy" alt="">
-			</div>
+		<div class="flex flex-row flex-wrap w-[1296px] gap-[24px]">
+			{#each data.portfolios as portfolio, index}
+				<div class="w-[416px] h-[614px] flex flex-col">
+					<img class="w-[416px] h-[503px] object-cover" src={images[index]} loading="lazy" alt="" />
+					<div class="w-[416px] bg-[#f8f9fa] h-[111px] flex flex-col items-center">
+						<a
+							href={`/portfolios/${portfolio.slug}`}
+							class="text-[20px] mt-[24px] font-bold transition duration-300 hover:text-[#71b095]"
+							>{portfolio.category}</a
+						>
+						<h3 class="leading-[1.7] text-[16px] mt-[8px] font-medium text-[#71b095]">
+							{portfolio.client}
+						</h3>
+					</div>
+				</div>
+			{/each}
 		</div>
 	</div>
 </div>

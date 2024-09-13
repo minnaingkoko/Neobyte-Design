@@ -1,14 +1,14 @@
 import { supabase } from '$lib/utils/supabaseClient';
 
 export async function load() {
-	const { data: posts, error } = await supabase
-		.from('posts')
+	const { data: portfolios, error } = await supabase
+		.from('portfolios')
 		.select('*')
 		.order('created_at', { ascending: false });
 
 	if (error) {
-		console.error('Error fetching posts:', error);
+		console.error('Error fetching portfolios:', error);
 	}
 
-	return { posts };
+	return { portfolios };
 }

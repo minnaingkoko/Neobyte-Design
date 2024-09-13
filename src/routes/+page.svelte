@@ -4,6 +4,26 @@
 	import hero_shape from '$lib/images/hero-shape.png';
 	import Footer from '../components/Footer.svelte';
 	import FaqItem from '../components/FAQItem.svelte';
+
+	import blog1 from '$lib/images/professional-business-website-online-presence.webp';
+	import blog2 from '$lib/images/future-web-design-trends-dark-mode-ai-chatbots.webp';
+	import blog3 from '$lib/images/user-experience-ux-design-navigation-mobile-optimization.webp';
+	import blog4 from '$lib/images/branding-visual-identity-consistent-branding.webp';
+	import blog5 from '$lib/images/modern-website-design-responsive-clean-layout.webp';
+
+	const images = [blog1, blog2, blog3, blog4, blog5];
+
+	export let data;
+
+	const formatDate = (dateStr) => {
+		const date = new Date(dateStr);
+
+		// Customize the date format
+		const options = { year: 'numeric', month: 'long', day: 'numeric' };
+		const formattedDate = date.toLocaleDateString('en-US', options);
+
+		return formattedDate;
+	};
 </script>
 
 <div class="bg-[url('/background.jpg')] w-[100%] h-[915px] flex flex-col items-center">
@@ -63,7 +83,7 @@
 		</div>
 	</div>
 </div>
-<div class="w-[100%] flex flex-col items-center mt-[200px] pb-[200px] mb-[200px]">
+<div class="w-[100%] flex flex-col items-center mt-[200px] mb-[200px]">
 	<h2 class="mb-[35px] text-[54px] font-bold leading-[1.17]">Frequently asked questions</h2>
 	<p class="w-[685px] text-[#585858] text-[21px] leading-[1.62] text-center">
 		Welcome to our Frequently Asked Questions (FAQ) section! Here, we have compiled a list of
@@ -108,6 +128,41 @@
 			including updates, backups, and performance monitoring."
 			/>
 		</div>
+	</div>
+</div>
+
+<div class="w-[100%] flex flex-col items-center mt-[200px] pb-[200px] mb-[200px]">
+	<div class="w-[1290px]">
+		<div class="text-[#71b095] text-[18px] mb-[25px] font-bold leading-[1.28]">The Blog</div>
+		<h2 class="mb-[100px] text-[64px] leading-[1.17] font-bold">Browse the articles & resources</h2>
+	</div>
+	<div class="flex flex-row w-[1290px] flex-wrap gap-[30px]">
+		{#each data.posts as post, index}
+			{#if index === 0}
+				<div class="hidden"></div>
+			{:else if index < 3}
+				<article
+					class="w-[630px] h-[675px] mt-[20px] rounded-[5px]"
+					style="box-shadow: 0 4px 50px rgba(0, 0, 0, .1);"
+				>
+					<img
+						class="w-[630px] h-[417px] object-cover rounded-tl-[5px] rounded-tr-[5px]"
+						src={images[index]}
+						loading="lazy"
+						alt=""
+					/>
+					<div class="h-[258px] px-[40px] pt-[50px] pb-[45px]">
+						<div class="mb-[25px] leading-[1.25] font-bold text-[16px]">
+							{formatDate(post.created_at)}
+						</div>
+						<a
+							class="text-[36px] leading-[1.25] font-bold hover:text-[#71b09586] transition duration-300"
+							href={`/blogs/${post.slug}`}>{post.title}</a
+						>
+					</div>
+				</article>
+			{/if}
+		{/each}
 	</div>
 </div>
 

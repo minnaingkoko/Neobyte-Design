@@ -1,3 +1,4 @@
+// src/routes/+page.js
 import { supabase } from '$lib/utils/supabaseClient';
 
 export async function load() {
