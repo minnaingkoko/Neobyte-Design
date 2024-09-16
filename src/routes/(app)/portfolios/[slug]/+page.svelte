@@ -19,17 +19,37 @@
 	<Header />
 </div>
 <div class="mt-[120px] mb-[200px] pb-[200px] flex flex-col items-center">
-	<div class="leading-[1.25] font-bold text-[16px] w-[890px]">
-		{formatDate(data.portfolio.created_at)}
-	</div>
-	<h1 class="mt-[25px] w-[890px] text-[66px] leading-[1.17] font-bold">
-		{data.portfolio.category}
-	</h1>
 	<img
-		class="w-[1296px] h-[621px] object-cover rounded-[10px] mt-[40px] mb-[70px]"
+		class="w-[1296px] h-[621px] object-cover rounded-[10px] mb-[30px]"
 		src={portfolio_detail1}
 		loading="lazy"
 		alt=""
 	/>
-	{@html data.portfolio.content}
+	<div
+		class="w-[1296px] h-[133px] bg-[#1f2732] rounded-[10px] mb-[36px] flex justify-center items-center gap-[150px]"
+	>
+		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
+			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Client</div>
+			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">{data.portfolio.client}</div>
+		</div>
+		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
+			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Project Value</div>
+			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">{data.portfolio.value}</div>
+		</div>
+		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
+			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Date</div>
+			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">
+				{formatDate(data.portfolio.created_at)}
+			</div>
+		</div>
+		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
+			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Category</div>
+			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">{data.portfolio.category}</div>
+		</div>
+	</div>
+	<div class="w-[1296px]">
+		<h2 class="text-[24px] mb-[24px] font-bold">Project Detail</h2>
+
+		{@html data.portfolio.content}
+	</div>
 </div>
