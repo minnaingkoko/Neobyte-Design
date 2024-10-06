@@ -19,7 +19,7 @@
 		</h2>
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[85px]">
 			To request a refund, please contact us at <a
-				class="text-[#71b095] hover:underline transition duration-300"
+				class="text-[#28483A] hover:underline transition duration-300"
 				href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a
 			> with your order number and the reason for your refund request. We will process your refund within
 			5 business days and send you a confirmation email.
@@ -49,7 +49,7 @@
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[120px]">
 			If you have any questions or concerns about our refund policy, please feel free to contact us
 			at <a
-				class="text-[#71b095] hover:underline transition duration-300"
+				class="text-[#28483A] hover:underline transition duration-300"
 				href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a
 			>. We are always here to assist you. Thank you for choosing Neobyte Design!
 		</p>

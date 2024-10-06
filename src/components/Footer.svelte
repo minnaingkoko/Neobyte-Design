@@ -35,7 +35,7 @@
 <footer>
 	<div class="w-[100%] h-[905px] bg-[#0a0f16] pt-[330px] flex justify-center relative">
 		<div
-			class="absolute top-[-190px] z-[10 bg-[#71b095] w-[1290px] h-[346px] flex justify-center"
+			class="absolute top-[-190px] z-[10 bg-[#28483A] w-[1290px] h-[346px] flex justify-center"
 			style="transform: rotate(-1.5deg);"
 		>
 			<div
@@ -57,14 +57,14 @@
 						class="flex flex-row w-[441px] h-[65px] items-center relative"
 					>
 						<input
-							class="border-[#b0a6a6] focus:border-[#71b095] focus:outline-none transition duration-300 pt-[19px] pb-[19px] pr-[130px] pl-[20px] w-[100%] h-[100%] border-solid border-[1px] rounded-[6px] text-[#333] text-[14px] leading-[1.42857] bg-[#0000]"
+							class="border-[#b0a6a6] focus:border-[#28483A] focus:outline-none transition duration-300 pt-[19px] pb-[19px] pr-[130px] pl-[20px] w-[100%] h-[100%] border-solid border-[1px] rounded-[6px] text-[#333] text-[14px] leading-[1.42857] bg-[#0000]"
 							type="email"
 							bind:value={email}
 							placeholder="Enter Your Email.."
 						/>
 						<button
 							type="submit"
-							class="absolute w-[121px] h-[48px] flex justify-center items-center text-[16px] font-semibold bg-[#71b095] text-[#fff] rounded-[10px] cursor-pointer right-[8px] hover:bg-[#0c1523] transition duration-300"
+							class="absolute w-[121px] h-[48px] flex justify-center items-center text-[16px] font-semibold bg-[#28483A] text-[#fff] rounded-[10px] cursor-pointer right-[8px] hover:bg-[#0c1523] transition duration-300"
 						>
 							Subscribe
 						</button>
@@ -81,7 +81,7 @@
 		<div class="text-[#d4cdcd] w-[1290px] h-[444px] flex flex-row justify-between">
 			<div class="w-[375px]">
 				<img
-					class="w-[195px] h-[80px] object-cover mb-[40px]"
+					class="h-[80px] object-cover mb-[40px]"
 					src={logo_white}
 					loading="lazy"
 					alt=""
@@ -110,21 +110,21 @@
 					<a
 						target="_blank"
 						href="https://www.facebook.com/neobytedesign"
-						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#28483A] hover:border-[#28483A] transition duration-300"
 					>
 						<img src={facebook_icon} loading="lazy" alt="" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.linkedin.com/company/neobyte-design/"
-						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#28483A] hover:border-[#28483A] transition duration-300"
 					>
 						<img src={linkedin_icon} loading="lazy" alt="" />
 					</a>
 					<a
 						target="_blank"
 						href="viber://chat?number=+959459170740"
-						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#28483A] hover:border-[#28483A] transition duration-300"
 					>
 						<img src={viber_icon} loading="lazy" alt="" />
 					</a>
@@ -142,7 +142,6 @@
 					<a class="hover:text-[#fff] transition duration-300" href="/about-me">About Me</a>
 					<a class="hover:text-[#fff] transition duration-300" href="/blogs">Blog</a>
 					<a class="hover:text-[#fff] transition duration-300" href="/contact-me">Contact Me</a>
-					<a class="hover:text-[#fff] transition duration-300" href="/contact-me">Get a Quote</a>
 				</div>
 				<div class="flex flex-col gap-[20px] mt-[15px]">
 					<h3 class="mb-[20px] text-[#fff] text-[24px] font-semibold leading-[1.375]">Legal</h3>

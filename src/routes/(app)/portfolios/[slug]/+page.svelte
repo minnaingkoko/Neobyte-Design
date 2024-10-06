@@ -29,21 +29,21 @@
 		class="w-[1296px] h-[133px] bg-[#1f2732] rounded-[10px] mb-[36px] flex justify-center items-center gap-[150px]"
 	>
 		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
-			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Client</div>
+			<div class="text-[#28483A] text-[20px] font-bold leading-[1.2]">Client</div>
 			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">{data.portfolio.client}</div>
 		</div>
 		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
-			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Project Value</div>
+			<div class="text-[#28483A] text-[20px] font-bold leading-[1.2]">Project Value</div>
 			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">{data.portfolio.value}</div>
 		</div>
 		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
-			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Date</div>
+			<div class="text-[#28483A] text-[20px] font-bold leading-[1.2]">Date</div>
 			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">
 				{formatDate(data.portfolio.created_at)}
 			</div>
 		</div>
 		<div class="h-[59px] flex flex-col justify-center items-center gap-[8px]">
-			<div class="text-[#71b095] text-[20px] font-bold leading-[1.2]">Category</div>
+			<div class="text-[#28483A] text-[20px] font-bold leading-[1.2]">Category</div>
 			<div class="text-[#fff] text-[16px] font-medium leading-[1.7]">{data.portfolio.category}</div>
 		</div>
 	</div>

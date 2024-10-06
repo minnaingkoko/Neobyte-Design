@@ -5,7 +5,7 @@
 <header class="mt-[50px] flex flex-row justify-between items-center w-[1290px] h-[80px]">
 	<div>
 		<a href="/">
-			<img class="w-[195px] h-[80px] object-cover" src={logo} loading="lazy" alt="" />
+			<img class="h-[80px] object-cover" src={logo} loading="lazy" alt="" />
 		</a>
 	</div>
 	<nav class="flex flex-row gap-[50px] text-[18px] font-medium leading-[1.28]">

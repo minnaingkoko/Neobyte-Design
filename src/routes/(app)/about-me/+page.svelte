@@ -14,26 +14,26 @@
 	<header class="mt-[50px] flex flex-row justify-between items-center w-[1290px] h-[80px]">
 		<div>
 			<a href="/">
-				<img class="w-[195px] h-[80px] object-cover" src={logo} loading="lazy" alt="" />
+				<img class="h-[80px] object-cover" src={logo} loading="lazy" alt="" />
 			</a>
 		</div>
 		<nav class="flex flex-row gap-[50px] text-[18px] font-medium leading-[1.28]">
-			<a class="transition duration-300 hover:text-[#71b095]" href="/">Home</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/services">Services</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/portfolios">Portfolios</a>
-			<a class="text-[#71b095]" href="/about-me">About Me</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/blogs">Blogs</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/">Home</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/services">Services</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/portfolios">Portfolios</a>
+			<a class="text-[#28483A]" href="/about-me">About Me</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/blogs">Blogs</a>
 		</nav>
 		<a
 			href="/contact-me"
-			class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#71b095] transition duration-300"
+			class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#28483A] transition duration-300"
 		>
 			Contact Me
 		</a>
 	</header>
 	<div class="flex flex-row w-[1290px] gap-[30px] mt-[80px] mb-[140px]">
 		<div class="w-[630px] flex flex-col justify-center">
-			<h1 class="text-[#71b095] mb-[25px] text-[18px] font-bold leading-[1.28]">About Me</h1>
+			<h1 class="text-[#28483A] mb-[25px] text-[18px] font-bold leading-[1.28]">About Me</h1>
 			<h2 class="leading-[1.17] text-[54px] mb-[35px] font-bold text-[#0c1523]">
 				About our startup company
 			</h2>
@@ -43,7 +43,7 @@
 				reality.
 			</p>
 			<a
-				class="w-[174px] h-[65px] rounded-[10px] bg-[#71b095] text-[18px] font-bold leading-[1.4] flex justify-center items-center text-[#fff] hover:bg-[#0c1523] transition duration-300"
+				class="w-[174px] h-[65px] rounded-[10px] bg-[#28483A] text-[18px] font-bold leading-[1.4] flex justify-center items-center text-[#fff] hover:bg-[#0c1523] transition duration-300"
 				href="/contact-me">Get Started</a
 			>
 		</div>
@@ -58,7 +58,7 @@
 	</div>
 </div>
 <div class="w-[100%] flex flex-col items-center py-[140px]">
-	<h1 class="mb-[30px] text-[#71b095] text-[18px] leading-[1.28] font-bold">The Values</h1>
+	<h1 class="mb-[30px] text-[#28483A] text-[18px] leading-[1.28] font-bold">The Values</h1>
 	<h2 class="text-[54px] leading-[1.17] font-bold mb-[80px] w-[895px] text-[#0c1523] text-center">
 		Building a Strong Foundation for Success
 	</h2>
@@ -152,7 +152,7 @@
 	</div>
 </div>
 <div class="w-[100%] bg-[#f9f9f9] flex flex-col items-center pt-[140px] pb-[330px]">
-	<h1 class="mb-[30px] text-[#71b095] text-[18px] leading-[1.28] font-bold">The Founder</h1>
+	<h1 class="mb-[30px] text-[#28483A] text-[18px] leading-[1.28] font-bold">The Founder</h1>
 	<h2 class="text-[54px] leading-[1.17] font-bold mb-[80px] w-[895px] text-[#0c1523] text-center">
 		Meet the Dedicated Mind Behind Neobyte Design
 	</h2>
@@ -164,6 +164,6 @@
 			alt=""
 		/>
 		<div class="w-[409px] text-[32px] font-semibold leading-[1.25] mb-[10px]">Min Naing Ko Ko</div>
-		<div class="w-[409px] text-[#71b095] text-[18px] font-bold leading-[1.28]">CTO & Founder</div>
+		<div class="w-[409px] text-[#28483A] text-[18px] font-bold leading-[1.28]">CTO & Founder</div>
 	</div>
 </div>

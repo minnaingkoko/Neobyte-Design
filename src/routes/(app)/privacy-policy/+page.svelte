@@ -143,7 +143,7 @@
 		<h2 class="text-[28px] font-bold leading-[1.27] text-[#0c1523] mb-[30px]">Contact Us</h2>
 		<p class="text-[21px] leading-[1.62] text-[#585858] mb-[120px]">
 			If you have any questions or concerns about this Privacy Policy, please contact us at <a
-				class="text-[#71b095] hover:underline transition duration-300"
+				class="text-[#28483A] hover:underline transition duration-300"
 				href="mailto:neobytedesign@gmail.com">neobytedesign@gmail.com</a
 			>
 		</p>

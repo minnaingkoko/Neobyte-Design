@@ -13,7 +13,7 @@
 		We can’t find the page your are looking for. You can head back to Homepage.
 	</p>
 	<a
-		class="bg-[#71b095] w-[158px] h-[54px] flex justify-center items-center text-[#fff] font-bold text-[15px] leading-[26px] hover:bg-[#0c1523] transition duration-300"
+		class="bg-[#28483A] w-[158px] h-[54px] flex justify-center items-center text-[#fff] font-bold text-[15px] leading-[26px] hover:bg-[#0c1523] transition duration-300"
 		href="/">Home Page</a
 	>
 </div>

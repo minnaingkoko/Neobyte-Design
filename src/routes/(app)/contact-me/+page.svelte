@@ -35,7 +35,7 @@
 <div class="w-[100%] h-[880px] mb-[506px] flex flex-col bg-[#f9f9f9] items-center">
 	<Header />
 	<div class="flex flex-col items-center w-[1290px] mt-[85px]">
-		<div class="text-[#71b095] mb-[25px] text-[18px] font-bold leading-[1.28]">Contact Me</div>
+		<div class="text-[#28483A] mb-[25px] text-[18px] font-bold leading-[1.28]">Contact Me</div>
 		<h1 class="w-[890px] text-[66px] font-bold leading-[1.17] text-center">
 			Reach Out to Us Directly for Immediate Support
 		</h1>
@@ -47,13 +47,13 @@
 				<form class="flex flex-col py-[77px] px-[60px] gap-[20px]" on:submit={handleSubmit}>
 					<div class="flex flex-row gap-[20px]">
 						<input
-							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#28483A] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="text"
 							placeholder="First Name"
 							bind:value={firstName}
 						/>
 						<input
-							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#28483A] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="text"
 							placeholder="Last Name"
 							bind:value={lastName}
@@ -61,20 +61,20 @@
 					</div>
 					<div class="flex flex-row gap-[20px]">
 						<input
-							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#28483A] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="email"
 							placeholder="Email"
 							bind:value={email}
 						/>
 						<input
-							class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+							class="focus:border-[#28483A] focus:outline-none transition duration-300 pl-[20px] w-[300px] h-[65px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 							type="text"
 							placeholder="Subject"
 							bind:value={subject}
 						/>
 					</div>
 					<textarea
-						class="focus:border-[#71b095] focus:outline-none transition duration-300 pl-[20px] pt-[20px] w-[620px] h-[256px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
+						class="focus:border-[#28483A] focus:outline-none transition duration-300 pl-[20px] pt-[20px] w-[620px] h-[256px] rounded-[8px] bg-[#fcfcfc] text-[#646465] border-solid border-[1px] border-[#eaecef]"
 						placeholder="Your Message"
 						bind:value={message}
 					></textarea>
@@ -106,21 +106,21 @@
 					<a
 						target="_blank"
 						href="https://www.facebook.com/neobytedesign"
-						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#28483A] hover:border-[#28483A] transition duration-300"
 					>
 						<img src={facebook_icon} alt="" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.linkedin.com/company/neobyte-design/"
-						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#28483A] hover:border-[#28483A] transition duration-300"
 					>
 						<img src={linkedin_icon} alt="" />
 					</a>
 					<a
 						target="_blank"
 						href="viber://chat?number=+959459170740"
-						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#71b095] hover:border-[#71b095] transition duration-300"
+						class="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] border-solid border-[#c1c1c1] border-[1px] cursor-pointer hover:bg-[#28483A] hover:border-[#28483A] transition duration-300"
 					>
 						<img src={viber_icon} alt="" />
 					</a>

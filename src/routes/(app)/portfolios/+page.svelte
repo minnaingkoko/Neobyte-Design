@@ -26,19 +26,19 @@
 	<header class="mt-[50px] flex flex-row justify-between items-center w-[1290px] h-[80px]">
 		<div>
 			<a href="/">
-				<img class="w-[195px] h-[80px] object-cover" src={logo} loading="lazy" alt="" />
+				<img class="h-[80px] object-cover" src={logo} loading="lazy" alt="" />
 			</a>
 		</div>
 		<nav class="flex flex-row gap-[50px] text-[18px] font-medium leading-[1.28]">
-			<a class="transition duration-300 hover:text-[#71b095]" href="/">Home</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/services">Services</a>
-			<a class="text-[#71b095]" href="/portfolios">Portfolios</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/about-me">About Me</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/blogs">Blogs</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/">Home</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/services">Services</a>
+			<a class="text-[#28483A]" href="/portfolios">Portfolios</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/about-me">About Me</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/blogs">Blogs</a>
 		</nav>
 		<a
 			href="/contact-me"
-			class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#71b095] transition duration-300"
+			class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#28483A] transition duration-300"
 		>
 			Contact Me
 		</a>
@@ -47,7 +47,7 @@
 
 <div class="mt-[120px] mb-[200px] pb-[200px] flex flex-col items-center">
 	<div class="w-[1290px]">
-		<div class="text-[#71b095] text-[18px] mb-[25px] font-bold leading-[1.28]">Portfolios</div>
+		<div class="text-[#28483A] text-[18px] mb-[25px] font-bold leading-[1.28]">Portfolios</div>
 		<h2 class="mb-[100px] text-[64px] leading-[1.17] font-bold">
 			Explore Projects & Success Stories
 		</h2>
@@ -61,10 +61,10 @@
 					<div class="w-[416px] bg-[#f8f9fa] h-[111px] flex flex-col items-center">
 						<a
 							href={`/portfolios/${portfolio.slug}`}
-							class="text-[20px] mt-[24px] font-bold transition duration-300 hover:text-[#71b095]"
+							class="text-[20px] mt-[24px] font-bold transition duration-300 hover:text-[#28483A]"
 							>{portfolio.category}</a
 						>
-						<h3 class="leading-[1.7] text-[16px] mt-[8px] font-medium text-[#71b095]">
+						<h3 class="leading-[1.7] text-[16px] mt-[8px] font-medium text-[#28483A]">
 							{portfolio.client}
 						</h3>
 					</div>

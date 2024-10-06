@@ -1,15 +1,18 @@
 <script lang="ts">
 	import logo from '$lib/images/logo.png';
 	import hero from '$lib/images/hero-img.jpg';
-	import hero_shape from '$lib/images/hero-shape.png';
 	import Footer from '../components/Footer.svelte';
 	import FaqItem from '../components/FAQItem.svelte';
 
+	import client1 from '$lib/images/client1.jpg';
+	import client2 from '$lib/images/client2.jpg';
+	import client3 from '$lib/images/client3.jpg';
 	import blog1 from '$lib/images/professional-business-website-online-presence.webp';
 	import blog2 from '$lib/images/future-web-design-trends-dark-mode-ai-chatbots.webp';
 	import blog3 from '$lib/images/user-experience-ux-design-navigation-mobile-optimization.webp';
 	import blog4 from '$lib/images/branding-visual-identity-consistent-branding.webp';
 	import blog5 from '$lib/images/modern-website-design-responsive-clean-layout.webp';
+	import ClientFeedback from '../components/ClientFeedback.svelte';
 
 	const images = [blog1, blog2, blog3, blog4, blog5];
 
@@ -30,19 +33,19 @@
 	<header class="mt-[50px] flex flex-row justify-between items-center w-[1290px] h-[80px]">
 		<div>
 			<a href="/">
-				<img class="w-[195px] h-[80px] object-cover" src={logo} loading="lazy" alt="" />
+				<img class="h-[80px] object-cover" src={logo} loading="lazy" alt="" />
 			</a>
 		</div>
 		<nav class="flex flex-row gap-[50px] text-[18px] font-medium leading-[1.28]">
-			<a class="text-[#71b095]" href="/">Home</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/services">Services</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/portfolios">Portfolios</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/about-me">About Me</a>
-			<a class="transition duration-300 hover:text-[#71b095]" href="/blogs">Blogs</a>
+			<a class="text-[#28483A]" href="/">Home</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/services">Services</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/portfolios">Portfolios</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/about-me">About Me</a>
+			<a class="transition duration-300 hover:text-[#28483A]" href="/blogs">Blogs</a>
 		</nav>
 		<a
 			href="/contact-me"
-			class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#71b095] transition duration-300"
+			class="bg-[#0c1523] text-[#fff] rounded-[10px] text-[18px] font-bold cursor-pointer w-[165px] h-[55px] flex justify-center items-center hover:bg-[#28483A] transition duration-300"
 		>
 			Contact Me
 		</a>
@@ -59,7 +62,7 @@
 				</p>
 				<a
 					href="/contact-me"
-					class="w-[174px] h-[65px] mt-[50px] bg-[#71b095] text-[#fff] flex justify-center items-center rounded-[10px] text-[18px] font-bold leading-[1.4] cursor-pointer hover:bg-[#0c1523] transition duration-300"
+					class="w-[174px] h-[65px] mt-[50px] bg-[#28483A] text-[#fff] flex justify-center items-center rounded-[10px] text-[18px] font-bold leading-[1.4] cursor-pointer hover:bg-[#0c1523] transition duration-300"
 				>
 					Get Started
 				</a>
@@ -72,18 +75,60 @@
 						loading="lazy"
 						alt=""
 					/>
-					<img
-						class="absolute bottom-[65px] left-[-90px] z-[0]"
-						src={hero_shape}
-						loading="lazy"
-						alt=""
-					/>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="w-[100%] flex flex-col items-center mt-[200px] mb-[200px]">
+
+
+<div class="w-[100%] flex flex-col items-center mt-[140px] py-[120px] bg-[#f5f5f5]">
+	<h2>Our Testimonials</h2>
+	<div>What They’re Saying?</div>
+	<div class="flex flex-row gap-[48px]">
+		<div class="w-[400px] h-[276px] flex flex-row relative">
+			<img class="w-[100px] h-[140px] object-cover" src={client1} alt="" />
+			<div>
+				<div>James Carter</div>
+				<div>Owner, Mitchell Marketing Solutions</div>
+			</div>
+			<div class="absolute bottom-0 right-0">
+				Neobyte Design transformed our outdated website into a modern, responsive platform that has
+				significantly boosted our customer engagement. The team's expertise and dedication are
+				unmatched. I can't imagine running my business without their services.
+			</div>
+		</div>
+		<div class="w-[400px] h-[276px] flex flex-row relative">
+			<img class="w-[100px] h-[140px] object-cover" src={client2} alt="" />
+			<div>
+				<div>Michael Adams</div>
+				<div>Founder & CEO, TechWave Solutions</div>
+			</div>
+			<div class="absolute bottom-0 right-0">
+				The professionalism and creativity that Neobyte Design brought to our website redesign
+				project were incredible. We've seen a remarkable increase in leads and conversions. Their
+				ability to capture our vision and execute it flawlessly is why we highly recommend them.
+			</div>
+		</div>
+		<div class="w-[400px] h-[276px] flex flex-row relative">
+			<img class="w-[100px] h-[140px] object-cover" src={client3} alt="" />
+			<div>
+				<div>Emily Roberts</div>
+				<div>Managing Director, Green Horizons Travel</div>
+			</div>
+			<div class="absolute bottom-0 right-0">
+				Neobyte Design gave our travel website a complete overhaul, and the results are phenomenal!
+				The seamless user experience has driven up our bookings, and customers keep complimenting
+				the new design. Working with them was an absolute pleasure.
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<ClientFeedback />
+
+<div class="w-[100%] flex flex-col items-center mt-[140px] mb-[140px] bg-[#f5f5f5] py-[120px]">
 	<h2 class="mb-[35px] text-[54px] font-bold leading-[1.17]">Frequently asked questions</h2>
 	<p class="w-[685px] text-[#585858] text-[21px] leading-[1.62] text-center">
 		Welcome to our Frequently Asked Questions (FAQ) section! Here, we have compiled a list of
@@ -131,38 +176,40 @@
 	</div>
 </div>
 
-<div class="w-[100%] flex flex-col items-center mt-[200px] pb-[200px] mb-[200px]">
+<div class="w-[100%] flex flex-col items-center pb-[200px] mb-[200px]">
 	<div class="w-[1290px]">
-		<div class="text-[#71b095] text-[18px] mb-[25px] font-bold leading-[1.28]">The Blog</div>
+		<div class="text-[#28483A] text-[18px] mb-[25px] font-bold leading-[1.28]">The Blog</div>
 		<h2 class="mb-[100px] text-[64px] leading-[1.17] font-bold">Browse the articles & resources</h2>
 	</div>
 	<div class="flex flex-row w-[1290px] flex-wrap gap-[30px]">
-		{#each data.posts as post, index}
-			{#if index === 0}
-				<div class="hidden"></div>
-			{:else if index < 3}
-				<article
-					class="w-[630px] h-[675px] mt-[20px] rounded-[5px]"
-					style="box-shadow: 0 4px 50px rgba(0, 0, 0, .1);"
-				>
-					<img
-						class="w-[630px] h-[417px] object-cover rounded-tl-[5px] rounded-tr-[5px]"
-						src={images[index]}
-						loading="lazy"
-						alt=""
-					/>
-					<div class="h-[258px] px-[40px] pt-[50px] pb-[45px]">
-						<div class="mb-[25px] leading-[1.25] font-bold text-[16px]">
-							{formatDate(post.created_at)}
+		{#if data}
+			{#each data.posts as post, index}
+				{#if index === 0}
+					<div class="hidden"></div>
+				{:else if index < 3}
+					<article
+						class="w-[630px] h-[675px] mt-[20px] rounded-[5px]"
+						style="box-shadow: 0 4px 50px rgba(0, 0, 0, .1);"
+					>
+						<img
+							class="w-[630px] h-[417px] object-cover rounded-tl-[5px] rounded-tr-[5px]"
+							src={images[index]}
+							loading="lazy"
+							alt=""
+						/>
+						<div class="h-[258px] px-[40px] pt-[50px] pb-[45px]">
+							<div class="mb-[25px] leading-[1.25] font-bold text-[16px]">
+								{formatDate(post.created_at)}
+							</div>
+							<a
+								class="text-[36px] leading-[1.25] font-bold hover:text-[#28483A86] transition duration-300"
+								href={`/blogs/${post.slug}`}>{post.title}</a
+							>
 						</div>
-						<a
-							class="text-[36px] leading-[1.25] font-bold hover:text-[#71b09586] transition duration-300"
-							href={`/blogs/${post.slug}`}>{post.title}</a
-						>
-					</div>
-				</article>
-			{/if}
-		{/each}
+					</article>
+				{/if}
+			{/each}
+		{/if}
 	</div>
 </div>
 
